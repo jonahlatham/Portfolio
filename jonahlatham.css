@@ -1,0 +1,677 @@
+.info {
+    /* margin: auto; */
+    height: 100vh;
+    text-align: center;
+    opacity: 0;
+}
+
+.shurikenImg-active {
+    animation: mymoveleft 1.4s normal forwards;
+}
+
+.shurikenImg2-active {
+    animation: mymoveright 1.4s normal forwards;
+}
+
+.info-active {
+    animation: info 1.7s normal forwards;
+}
+
+@keyframes info {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+.maxWidth {
+    max-width: 850px;
+    margin: auto;
+    padding-left: 50px;
+    margin-top: 120px;
+}
+
+.aTag {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email {
+    font-size: 10px;
+    margin-top: -35px;
+}
+
+.row {
+    margin: 50px 0px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    background-image: url('https://avatars0.githubusercontent.com/u/47837589?s=460&v=4');
+    background-size: contain;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-logo {
+    font-size: 50px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 50px;
+}
+
+.img-logo {
+    width: 50px;
+}
+
+.img-logo-linkedin {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 150px;
+    height: 25px;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom right, #cecbcb, #f3f3f3);
+    cursor: pointer;
+}
+
+.button:active {
+    background-image: linear-gradient(to bottom right, #8f8f8f, #d3d3d3);
+}
+
+.button:focus {
+    outline: none;
+}
+
+
+/* /////////////////////////////////////////////////////////////////// */
+
+
+/* //////////////////////////////////////////////////////////////// */
+
+
+/* shuriken slides */
+
+.shurikenImg {
+    opacity: 1;
+    width: 200px;
+    /* animation: mymoveleft 1.5s infinite; */
+    position: absolute;
+}
+
+.shurikenImg2 {
+    opacity: 1;
+    position: absolute;
+    width: 200px;
+    /* animation: mymoveright 1s infinite; */
+}
+
+@keyframes mymoveright {
+    0% {
+        top: 0%;
+        right: 0%;
+        transform: rotate(0deg);
+    }
+    85% {
+        top: 100%;
+        right: 100%;
+        transform: rotate(-1080deg);
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes mymoveleft {
+    0% {
+        top: 0%;
+        left: 0%;
+        transform: rotate(0deg);
+    }
+    85% {
+        top: 100%;
+        left: 100%;
+        transform: rotate(1080deg);
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* //////////////////////////////////////////////////////////////// */
+
+
+/* hometext */
+
+.hometext {
+    position: absolute;
+    top: 0px;
+    animation: txt 2s normal forwards;
+}
+
+@keyframes txt {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: .2;
+    }
+    85% {
+        opacity: .3;
+    }
+    90% {
+        opacity: .4;
+    }
+    94% {
+        opacity: .5;
+    }
+    97% {
+        opacity: .7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////// */
+
+.projects {
+    min-height: 100vh;
+    background: black;
+    color: white;
+    padding-top: 50px;
+    position: relative;
+}
+
+.leftBar {
+    height: 200px;
+    width: 25px;
+    background: white;
+    position: absolute;
+    margin: 10px;
+    opacity: 1;
+}
+
+.leftBar-active {
+    animation: leftBar 4.3s normal forwards;
+}
+
+@keyframes leftBar {
+    0% {
+        top: 0px;
+    }
+    40% {
+        top: 400px;
+    }
+    53% {
+        top: 200px;
+    }
+    80% {
+        top: 200px;
+        opacity: 1;
+    }
+    100% {
+        top: 400px;
+        opacity: 0;
+    }
+}
+
+.rightBar {
+    margin: 10px;
+    left: 95%;
+    top: 0px;
+    height: 200px;
+    width: 25px;
+    background: white;
+    position: absolute;
+    opacity: 1;
+}
+
+.rightBar-active {
+    animation: rightBar 4.3s normal forwards;
+}
+
+@keyframes rightBar {
+    0% {
+        top: 0px;
+    }
+    10% {
+        top: 0px;
+    }
+    25% {
+        top: 400px;
+    }
+    70% {
+        top: 400px;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        top: 240px;
+        opacity: 0;
+    }
+}
+
+.ball {
+    position: absolute;
+    background: white;
+    left: 45px;
+    top: 90px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.ball-active {
+    animation: ball 5s normal forwards;
+}
+
+@keyframes ball {
+    0% {
+        top: 90px;
+        left: 45px;
+    }
+    32% {
+        top: 470px;
+        left: 92%;
+    }
+    60% {
+        top: 350px;
+        left: 45px;
+    }
+    80% {
+        opacity: 1;
+    }
+    81% {
+        opacity: 0;
+    }
+    100% {
+        top: 350px;
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes projectContainter {
+    0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.project-container {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container-active {
+    animation: projectContainter 4.5s normal forwards;
+}
+
+.projectsATags {
+    color: white;
+    font-size: 20px;
+}
+
+.projectsATags:hover {
+    opacity: 1;
+}
+
+.quizticles {
+    position: relative;
+    width: 350px;
+    height: 210px;
+    padding: 5px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border-width: 15px;
+    background-image: url('./quizticles.png');
+    background-size: contain;
+    opacity: .2;
+}
+
+.pokemonCatchGame {
+    position: relative;
+    width: 350px;
+    height: 210px;
+    padding: 5px;
+    margin-left: 50px;
+    border-width: 15px;
+    background-image: url('./pokemonCatch.png');
+    background-size: contain;
+    opacity: .2;
+}
+
+.quizticles:hover {
+    opacity: 1;
+}
+
+.pokemonCatchGame:hover {
+    opacity: 1;
+}
+
+.whatchuWant {
+    position: relative;
+    width: 350px;
+    height: 210px;
+    padding: 5px;
+    margin-right: 50px;
+    border-width: 15px;
+    background-image: url('./home.png');
+    background-size: contain;
+    opacity: .2;
+}
+
+.whatchuWant:hover {
+    opacity: 1;
+}
+
+.projTxtLeft {
+    position: absolute;
+    left: 65px;
+}
+
+.projTxtRight {
+    position: absolute;
+    margin-left: 20px;
+}
+
+
+/* ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////// */
+
+.skills {
+    min-height: 70vh;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+.pacman {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #F2D648;
+    position: relative;
+    margin-top: 200px;
+    opacity: 1;
+}
+
+.pacman-active {
+    animation: packEat 5s normal forwards;
+}
+
+@keyframes packEat {
+    0% {
+        left: 5px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        left: 95%;
+        opacity: 0;
+    }
+}
+
+.pacman__mouth {
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+}
+
+.pacman__mouth-active {
+    animation-name: eat;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes eat {
+    0% {
+        clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    }
+    25% {
+        clip-path: polygon(100% 60%, 44% 48%, 100% 40%);
+    }
+    50% {
+        clip-path: polygon(100% 50%, 44% 48%, 100% 50%);
+    }
+    75% {
+        clip-path: polygon(100% 59%, 44% 48%, 100% 35%);
+    }
+    100% {
+        clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    }
+}
+
+.eatingBallsDiv {
+    width: 100%;
+    position: absolute;
+    margin-top: -63px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.eatingBall1 {
+    background: #d3d1d1;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    opacity: 1;
+}
+
+.eatingBall1-active {
+    animation: bl1 5s normal forwards;
+}
+
+@keyframes bl1 {
+    0% {
+        opacity: 1;
+    }
+    4.8% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.eatingBall2 {
+    background: #d3d1d1;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.eatingBall2-active {
+    animation: bl2 17s normal forwards;
+}
+
+@keyframes bl2 {
+    0% {
+        opacity: 1;
+    }
+    4.8% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.eatingBall3 {
+    background: #d3d1d1;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.eatingBall3-active {
+    animation: bl3 26s normal forwards;
+}
+
+@keyframes bl3 {
+    0% {
+        opacity: 1;
+    }
+    4.8% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.eatingBall4 {
+    background: #d3d1d1;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.eatingBall4-active {
+    animation: bl4 35s normal forwards;
+}
+
+@keyframes bl4 {
+    0% {
+        opacity: 1;
+    }
+    4.8% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.eatingBall5 {
+    background: #d3d1d1;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.eatingBall5-active {
+    animation: bl5 50s normal forwards;
+}
+
+@keyframes bl5 {
+    0% {
+        opacity: 1;
+    }
+    4.8% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.skillsDiv {
+    text-align: center;
+    opacity: 0;
+}
+
+.skillsDiv-active {
+    animation: sklz 5s normal forwards;
+}
+
+@keyframes sklz {
+    0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sklzH2 {
+    margin-top: -200px;
+}
+
+.listedSkills {
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
