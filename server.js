@@ -10,3 +10,6 @@ app.use(express.static(path.join(__dirname, '/build')));
 
 
 const port = process.env.PORT || 8090
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`)
+})
