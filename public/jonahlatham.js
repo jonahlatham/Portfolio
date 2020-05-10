@@ -9,7 +9,7 @@ $(document).ready(function () {
     $(window).on("load", function () {
         $(window).scroll(function () {
             let windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            console.log(windowBottom)
+            // console.log(windowBottom)
             if(windowBottom > 630 && windowBottom < 660){
                 $(".info").addClass("info-active")
                 $(".shurikenImg2").addClass("shurikenImg2-active")
