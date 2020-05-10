@@ -24,6 +24,44 @@ body {
     padding: 0px;
 }
 
+
+/* //////////////////////////////////////////////// */
+
+
+/* //////////////////////////////////////////////// */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000000c2;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* //////////////////////////////////////////////// */
+
+
+/* //////////////////////////////////////////////// */
+
 .maxWidth {
     max-width: 850px;
     margin: auto;
