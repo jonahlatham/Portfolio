@@ -1,19 +1,8 @@
 .info {
     /* margin: auto; */
-    height: 100vh;
+    height: 85vh;
     text-align: center;
     opacity: 0;
-}
-
-.shurikenImg-active {
-    animation: mymoveleft 1.4s normal forwards;
-}
-
-.shurikenImg2-active {
-    animation: mymoveright 1.4s normal forwards;
-}
-
-.info-active {
     animation: info 1.7s normal forwards;
 }
 
@@ -50,7 +39,7 @@ body {
 
 .email {
     font-size: 10px;
-    margin-top: -35px;
+    margin-top: 15px;
 }
 
 .row {
@@ -63,11 +52,13 @@ body {
 }
 
 .img {
-    width: 300px;
-    height: 300px;
-    background-image: url('https://avatars0.githubusercontent.com/u/47837589?s=460&v=4');
+    width: 350px;
+    height: 310px;
+    background-image: url(./_PortfolioPic.png);
     background-size: contain;
     border-radius: 5px;
+    background-repeat: no-repeat;
+    margin-right: -35px;
 }
 
 a {
@@ -78,15 +69,24 @@ a {
     font-size: 50px;
 }
 
+.github-img-padding {
+    border-radius: 5px;
+}
+
 .logo-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-right: 50px;
+    margin-left: 100px;
+    width: 40%;
 }
 
 .img-logo {
     width: 50px;
+}
+
+.img-logo-resume {
+    width: 57px;
 }
 
 .img-logo-linkedin {
@@ -127,7 +127,7 @@ a {
 .shurikenImg {
     opacity: 1;
     width: 200px;
-    /* animation: mymoveleft 1.5s infinite; */
+    animation: mymoveleft 1.4s normal forwards;
     position: absolute;
 }
 
@@ -135,7 +135,7 @@ a {
     opacity: 1;
     position: absolute;
     width: 200px;
-    /* animation: mymoveright 1s infinite; */
+    animation: mymoveright 1.4s normal forwards;
 }
 
 @keyframes mymoveright {
@@ -378,7 +378,7 @@ a {
     margin-left: 50px;
     margin-bottom: 50px;
     border-width: 15px;
-    background-image: url('./quizticles.png');
+    background-image: url('./1quizticles.png');
     background-size: contain;
     opacity: .2;
 }
@@ -390,7 +390,7 @@ a {
     padding: 5px;
     margin-left: 50px;
     border-width: 15px;
-    background-image: url('./pokemonCatch.png');
+    background-image: url('./1pokemonCatch.png');
     background-size: contain;
     opacity: .2;
 }
@@ -410,7 +410,7 @@ a {
     padding: 5px;
     margin-right: 50px;
     border-width: 15px;
-    background-image: url('./home.png');
+    background-image: url('./1home.png');
     background-size: contain;
     opacity: .2;
 }
@@ -436,7 +436,7 @@ a {
 //////////////////////////////////////////////////////////////// */
 
 .skills {
-    min-height: 70vh;
+    min-height: 75vh;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');

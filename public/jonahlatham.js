@@ -19,7 +19,7 @@ $(document).ready(function () {
                 $(".ball").addClass("ball-active")
                 $(".leftBar").addClass("leftBar-active")
                 $(".rightBar").addClass("rightBar-active")
-            }else if (windowBottom > 2065 && windowBottom < 2080){
+            }else if (windowBottom > 2065 && windowBottom < 2350){
                 $(".packmanContainer").addClass("packmanContainer-active")
                 $(".skillsDiv").addClass("skillsDiv-active")
                 $(".pacman").addClass("pacman-active")
